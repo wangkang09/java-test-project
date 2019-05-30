@@ -1,4 +1,4 @@
-package com.wangkang.test;
+package com.wangkang.test.Stream流测试;
 
 import com.wangkang.entity.User;
 import org.junit.Test;
@@ -12,8 +12,8 @@ import java.util.Optional;
  * @Modified By:
  */
 /**
- * 1. ofNullable 返回的就是传入的参数类型 -- testNull
- * 2. map为null的时候，执行orElse，而不是返回null --testMap
+ * 1. ofNullable 返回的就是传入的参数类型 -- testNull</br>
+ * 2. map为null的时候，执行orElse，而不是返回null --testMap</br>
  */
 public class OptionalTest {
 

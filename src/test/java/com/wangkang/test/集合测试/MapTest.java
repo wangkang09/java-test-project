@@ -1,6 +1,5 @@
-package com.wangkang.test;
+package com.wangkang.test.集合测试;
 
-import com.wangkang.entity.User;
 import org.junit.Test;
 
 import java.util.HashMap;
@@ -12,9 +11,10 @@ import java.util.Map;
  * @Date: Created in 17:17 2019/1/29
  * @Modified By:
  */
+
 /**
- *1. map 可以插入null，且可以被遍历出来 -- testAddNull
- *2. map 为null，遍历会报错 -- foreachNull
+ *1. map 可以插入null，且可以被遍历出来 -- testAddNull</br>
+ *2. map 为null，遍历会报错 -- foreachNull</br>
  *
  */
 public class MapTest {
@@ -26,10 +26,13 @@ public class MapTest {
         map.put(null,null);
         map.put("1","1");
 
+        //按node来遍历的！
         for (Map.Entry<String, String> entry : map.entrySet()) {
             System.out.println(entry.getValue());
             System.out.println(entry.getKey());
         }
+
+
     }
 
     @Test

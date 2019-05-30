@@ -9,7 +9,7 @@ import org.junit.Test;
  * @Modified By:
  */
 /**
- * 1. null.equals 会报空指针; obj.equals(null)始终返回false
+ * 1. null.equals 会报空指针; obj.equals(null)始终返回false</br>
  *
  */
 public class EqualsTest {

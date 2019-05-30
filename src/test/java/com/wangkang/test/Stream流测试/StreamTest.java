@@ -1,4 +1,4 @@
-package com.wangkang.test;
+package com.wangkang.test.Stream流测试;
 
 import com.wangkang.entity.User;
 import org.junit.Test;
@@ -16,14 +16,16 @@ import java.util.stream.Collectors;
  * @Modified By:
  */
 /**
- * 1. filter里对null值进行操作，会报错 -- testFilterIsNull
- * 2. 通过 filter(x->x!=null) 或 filter(Objects::nonNull) 来过滤null值 -- testFilterNull
- * 3. filter功能：取表达式为true的obj，即过滤掉为false的obj -- testFilterObj
+ * 1. filter里对null值进行操作，会报错 -- testFilterIsNull</br>
+ * 2. 通过 filter(x->x!=null) 或 filter(Objects::nonNull) 来过滤null值 -- testFilterNull</br>
+ * 3. filter功能：取表达式为true的obj，即过滤掉为false的obj -- testFilterObj</br>
  *
  */
+
 public class StreamTest {
 
     @Test
+    //filter里对null值进行操作，会报错
     public void testFilterIsNull() {
         List<String> list = new ArrayList<>(Arrays.asList("1","2","A",null));
 
@@ -33,6 +35,7 @@ public class StreamTest {
     }
 
     @Test
+    //通过 filter(x->x!=null) 或 filter(Objects::nonNull) 来过滤null值
     public void testFilterNull() {
         List<String> list = new ArrayList<>(Arrays.asList("1","2","A",null));
         List result = list.stream().filter(x->x!=null).collect(Collectors.toList());
@@ -42,10 +45,13 @@ public class StreamTest {
     }
 
     @Test
+    //filter功能：取表达式为true的obj，即过滤掉为false的obj
     public void testFilterObj() {
         List<String> list = new ArrayList<>(Arrays.asList("1","2","A",null));
         List result = list.stream().filter(x->"A".equals(x)).collect(Collectors.toList());
         System.out.println(result.toString());
     }
+
+
 
 }

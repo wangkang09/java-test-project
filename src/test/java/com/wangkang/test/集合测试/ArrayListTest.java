@@ -1,4 +1,4 @@
-package com.wangkang.test;
+package com.wangkang.test.集合测试;
 
 import com.wangkang.Util.CollectionUtil;
 import org.junit.Assert;
@@ -14,8 +14,9 @@ import java.util.List;
  * @Date: Created in 16:02 2019/1/29
  * @Modified By:
  */
+
 /**
- *1. null可以被加入到list中，也可以被遍历出来，且如果都是null属性，list不为空 -- testAddNull
+ *1. null可以被加入到list中，也可以被遍历出来，且如果都是null属性，list不为空 -- testAddNull</br>
  *2.
  *
  */
