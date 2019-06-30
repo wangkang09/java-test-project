@@ -29,6 +29,12 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.mozilla.intl/chardet -->
+		<dependency>
+			<groupId>org.mozilla.intl</groupId>
+			<artifactId>chardet</artifactId>
+			<version>1.0</version>
+		</dependency>
 	</dependencies>
 
 	<build>
